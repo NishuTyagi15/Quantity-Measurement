@@ -1,0 +1,256 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(248, 244, 244);
+    margin: 0px auto;
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+    font-family: normal normal normal 25px/30px Montserrat;
+    font-family: Montserrat;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+h2 {
+    top: 16px;
+    left: 212px;
+    width: 126px;
+    height: 29px;
+    font-family: normal normal 600 21px/31px Poppins;
+    font-family: Poppins;
+    font-size: 155%;
+    text-align: center;
+    width: 35%;
+}
+
+h4 {
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+.headercontainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: #446DFF;
+    color: white;
+}
+
+.head {
+    text-align: center;
+    width: 59%;
+    font: normal normal medium 15px/19px Montserrat;
+    font-family: Montserrat;
+    font-size: 17px;
+    letter-spacing: 0px;
+    padding-top: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.scalebutton {
+    top: 224px;
+    left: 385px;
+    width: 173px;
+    height: 137px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 0.2;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 30px;
+}
+
+.scalebutton:hover {
+    background: #EDFDF9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #0EC098;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+.tempbutton {
+    top: 224px;
+    left: 385px;
+    width: 173px;
+    height: 137px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 0.2;
+    margin-right: 30px;
+}
+.tempbutton:hover {
+    background: #f5c9cd 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #FD5160;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+.volbutton {
+    top: 224px;
+    left: 385px;
+    width: 173px;
+    height: 137px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 7px;
+    opacity: 0.2;
+}
+.volbutton:hover {
+    background: #d9ccf1 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #7224FF;
+    border-radius: 7px;
+    opacity: 1;
+}
+
+.images {
+    display: flex;
+    padding: 10px;
+}
+
+.length-text {
+    font-family: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
+    letter-spacing: 0px;
+    color: #0EC098;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.temp-text {
+    font-family: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
+    letter-spacing: 0px;
+    color: #FD5160;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.vol-text {
+    font-family: normal normal bold 15px/19px Montserrat;
+    font-family: Montserrat;
+    letter-spacing: 0px;
+    color: #7224FF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.length-converter {
+    width: 800px;
+    height: 200px;
+    position: absolute;
+    box-shadow: 0px 0px 2p x1;
+    margin-left: 24%;
+}
+
+input {
+    height: 60px;
+    width: 34%;
+    margin-right: 20px;
+    text-align: left;
+    font-weight: 900;
+    font-family: Montserrat;
+    font-size: 35px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-indent: 10%;
+}
+#input {
+    margin-left: 18px;
+}
+
+#inputType {
+    width: 280px;
+    height: 50px;
+    margin-left: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-indent: 10%;
+}
+
+#resultType {
+    font-family: Montserrat;
+    font-weight: bold;
+    width: 280px;
+    height: 50px;
+    margin-left: 20px;
+    text-indent: 10%;
+}
+
+.from-to {
+    margin-left: 20px;
+    font-display: flex; 
+    word-spacing: 255px;
+    font-size: 14px;
+    font-family: Montserrat;
+    color: #000000;
+    letter-spacing: 0px;
+    opacity: 0.62;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 70%;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h4{
+        font-size: 10px;
+    }
+    .head {
+        font-size: 14px;
+        width: 33%
+    }
+    .headercontainer {
+        margin-left: -9px;
+        margin-right: 20px;
+        font-size: 20px;
+        width: 76%;
+    }
+    .scalebutton {
+        margin-left: -10px;
+        margin-right: 10px;
+        top: 150x;
+        left: 250px;
+        width: 82px;
+        height: 108px;
+    }
+    .tempbutton {
+        top: 150x;
+        left: 250px;
+        width: 82px;
+        height: 108px;
+        margin-right: 10px;
+    }
+    .volbutton {
+        top: 150x;
+        left: 250px;
+        width: 82px;
+        height: 108px;
+    }
+    .from-to {
+        
+    }
+}
