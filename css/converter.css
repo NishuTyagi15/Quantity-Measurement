@@ -47,6 +47,8 @@ h4 {
 }
 
 .headercontainer {
+    margin-left: -3%;
+    width: 112%;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -217,44 +219,70 @@ input {
 
 
 @media only screen and (max-width: 600px) {
+    div {
+        margin-bottom: 30px;
+    }
     h1 {
-        font-size: 70%;
+        font-size: 58%;
+        margin-left: 8%;
+        width: 91%;
     }
     h2 {
-        font-size: 18px;
+        font-size: 12px;
+        margin-left: -16%;
     }
     h4{
         font-size: 10px;
     }
     .head {
-        font-size: 14px;
-        width: 33%
+        font-size: 11px;
+        margin-left: -19%;
     }
     .headercontainer {
-        margin-left: -9px;
+        margin-left: -32px;
         margin-right: 20px;
         font-size: 20px;
-        width: 76%;
+        width: 100%;
     }
     .scalebutton {
-        margin-left: -10px;
+        margin-left: -13px;
         margin-right: 10px;
         top: 150x;
         left: 250px;
-        width: 82px;
-        height: 108px;
+        width: 95px;
+        height: 96px;
     }
     .tempbutton {
         top: 150x;
         left: 250px;
-        width: 82px;
-        height: 108px;
-        margin-right: 10px;
+        width: 95px;
+        height: 96px;
+        margin-right: 8px;
     }
     .volbutton {
         top: 150x;
         left: 250px;
-        width: 82px;
-        height: 108px;
+        width: 95px;
+        height: 96px;
+    }
+    .length-converter {
+        margin-left: -6%;
+        width: 383px;
+    }
+    .from-to {
+        margin-left: 19px;
+        word-spacing: 115px;
+    }
+    #inputType {
+        width: 139px;
+        height: 50px;
+    }
+    #resultType {
+        width: 138px;
+        height: 50px;
+    }
+    input {
+        height: 50px;
+        font-size: 26px;
     }
 }
