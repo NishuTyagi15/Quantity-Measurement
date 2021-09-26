@@ -80,7 +80,7 @@ h4 {
     margin-right: 30px;
 }
 
-.scalebutton:hover {
+.active1, .scalebutton:hover {
     background: #EDFDF9 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #0EC098;
@@ -98,7 +98,8 @@ h4 {
     opacity: 0.2;
     margin-right: 30px;
 }
-.tempbutton:hover {
+
+.active2, .tempbutton:hover {
     background: #f5c9cd 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #FD5160;
@@ -115,7 +116,8 @@ h4 {
     border-radius: 7px;
     opacity: 0.2;
 }
-.volbutton:hover {
+
+.active3, .volbutton:hover {
     background: #d9ccf1 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #7224FF;
@@ -135,6 +137,10 @@ h4 {
     color: #0EC098;
     text-transform: capitalize;
     opacity: 1;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .temp-text {
@@ -182,7 +188,7 @@ input {
 
 #inputType {
     width: 280px;
-    height: 50px;
+    height: 60px;
     margin-left: 18px;
     font-family: Montserrat;
     font-weight: bold;
@@ -193,7 +199,7 @@ input {
     font-family: Montserrat;
     font-weight: bold;
     width: 280px;
-    height: 50px;
+    height: 60px;
     margin-left: 20px;
     text-indent: 10%;
 }
