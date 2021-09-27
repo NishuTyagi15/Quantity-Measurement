@@ -19,7 +19,7 @@ div {
 h1 {
     font-size: 25px;
     padding: 10px;
-    width: 50%;
+    width: 48%;
     font-family: normal normal normal 25px/30px Montserrat;
     font-family: Montserrat;
     font-weight: lighter;
@@ -38,7 +38,7 @@ h2 {
     font-family: Poppins;
     font-size: 155%;
     text-align: center;
-    width: 35%;
+    width: 33%;
 }
 
 h4 {
@@ -58,7 +58,7 @@ h4 {
 
 .head {
     text-align: center;
-    width: 59%;
+    width: 63%;
     font: normal normal medium 15px/19px Montserrat;
     font-family: Montserrat;
     font-size: 17px;
@@ -78,7 +78,7 @@ h4 {
     border-radius: 7px;
     opacity: 0.2;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 26%;
     margin-right: 30px;
 }
 
@@ -168,7 +168,7 @@ a:link {
     height: 200px;
     position: absolute;
     box-shadow: 0px 0px 2p x1;
-    margin-left: 24%;
+    margin-left: 25%;
 }
 
 input {
@@ -207,7 +207,7 @@ input {
 }
 
 .from-to {
-    margin-left: 20px;
+    margin-left: 18px;
     font-display: flex; 
     word-spacing: 255px;
     font-size: 14px;
@@ -219,9 +219,9 @@ input {
 
 
 @media only screen and (max-width: 600px) {
-    div {
+    /* div {
         margin-bottom: 30px;
-    }
+    } */
     h1 {
         font-size: 58%;
         margin-left: 8%;
@@ -229,14 +229,14 @@ input {
     }
     h2 {
         font-size: 12px;
-        margin-left: -16%;
+        margin-left: -14%;
     }
     h4{
         font-size: 10px;
     }
     .head {
         font-size: 11px;
-        margin-left: -19%;
+        margin-left: -21%;
     }
     .headercontainer {
         margin-left: -32px;
@@ -275,14 +275,14 @@ input {
     }
     #inputType {
         width: 139px;
-        height: 50px;
+        height: 40px;
     }
     #resultType {
         width: 138px;
-        height: 50px;
+        height: 40px;
     }
     input {
-        height: 50px;
+        height: 40px;
         font-size: 26px;
     }
 }
