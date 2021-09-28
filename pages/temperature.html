@@ -37,22 +37,26 @@
             </button>
         </div>
         <div class="length-converter">
-            <div class="from-to">
-                <p>FROM TO</p>
+            <div class="inputResult">
+                <div class="inputResult1">
+                    <div class="from"><p>FROM</p></div>
+                    <input type="number" placeholder="Input" value="1" id="input" pattern="^[0-9]{1,}(\.[0-9]{0,2})?$">
+                    <select id="inputType">
+                        <option value="celsius" id="celsius" selected>Celsius</option>
+                        <option value="fahrenheit" id="fahrenhiet">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div class="inputResult2">
+                    <div class="to"><p>TO</p></div>
+                    <input type="number" placeholder="Result" value="100" id="result" pattern="^[0-9]{1,}(\.[0-9]{0,2})?$">
+                    <select id="resultType">
+                        <option value="celsius">Celsius</option>
+                        <option value="fahrenheit" selected>Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
             </div>
-            <input type="text" placeholder="Input" value="0" id="input">
-            <input type="text" placeholder="Result" value="32" id="result">
-            <select id="inputType">
-                <option value="celsius" id="celsius" selected>Celsius</option>
-                <option value="fahrenheit" id="fahrenhiet">Fahrenheit</option>
-                <option value="Kelvin">Kelvin</option>
-            </select>
-            
-            <select id="resultType">
-                <option value="celsius">Celsius</option>
-                <option value="fahrenheit" selected>Fahrenheit</option>
-                <option value="Kelvin">Kelvin</option>
-            </select>
         </div>
     </div>
     <script src="../js/temperature.js"></script>

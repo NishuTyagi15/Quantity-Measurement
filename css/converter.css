@@ -2,31 +2,30 @@
 html {
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-color: rgb(248, 244, 244);
-    margin: 0px auto;
-    padding: 2em;
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
 }
 
 div {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 h1 {
-    font-size: 25px;
-    padding: 10px;
+    font-size: 22px;
+    padding: 8px;
     width: 48%;
-    font-family: normal normal normal 25px/30px Montserrat;
     font-family: Montserrat;
     font-weight: lighter;
     letter-spacing: 3px;
     color: #FFFFFF;
-    text-transform: capitalize;
-    opacity: 1;
 }
 
 h2 {
@@ -47,8 +46,8 @@ h4 {
 }
 
 .headercontainer {
-    margin-left: -3%;
-    width: 112%;
+    margin-left: 0%;
+    /* width: 112%; */
     display: flex;
     flex-flow: column wrap;
     align-content: center;
@@ -58,7 +57,7 @@ h4 {
 
 .head {
     text-align: center;
-    width: 63%;
+    width: 62%;
     font: normal normal medium 15px/19px Montserrat;
     font-family: Montserrat;
     font-size: 17px;
@@ -130,10 +129,10 @@ h4 {
 .images {
     display: flex;
     padding: 10px;
+    cursor: pointer;
 }
 
 .length-text {
-    font-family: normal normal bold 15px/19px Montserrat;
     font-family: Montserrat;
     letter-spacing: 0px;
     color: #0EC098;
@@ -163,53 +162,38 @@ a:link {
     opacity: 1;
 }
 
+.inputResult1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputResult2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputResult {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .length-converter {
-    width: 800px;
-    height: 200px;
     position: absolute;
-    box-shadow: 0px 0px 2p x1;
-    margin-left: 25%;
+    margin-left: 26%;
 }
 
-input {
-    height: 60px;
-    width: 34%;
-    margin-right: 20px;
-    text-align: left;
-    font-weight: 900;
+.from {
+    margin-left: 1.2rem;
+    font-size: 14px;
     font-family: Montserrat;
-    font-size: 35px;
-    letter-spacing: 0px;
     color: #000000;
-    opacity: 1;
-    text-indent: 10%;
-}
-#input {
-    margin-left: 18px;
+    letter-spacing: 0px;
+    opacity: 0.62; 
 }
 
-#inputType {
-    width: 280px;
-    height: 60px;
-    margin-left: 18px;
-    font-family: Montserrat;
-    font-weight: bold;
-    text-indent: 10%;
-}
-
-#resultType {
-    font-family: Montserrat;
-    font-weight: bold;
-    width: 280px;
-    height: 60px;
-    margin-left: 20px;
-    text-indent: 10%;
-}
-
-.from-to {
-    margin-left: 18px;
-    font-display: flex; 
-    word-spacing: 255px;
+.to {
     font-size: 14px;
     font-family: Montserrat;
     color: #000000;
@@ -217,72 +201,297 @@ input {
     opacity: 0.62;
 }
 
+input {
+    height: 55px;
+    width: 255px;
+    font-weight: 900;
+    font-family: Montserrat;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    text-indent: 7%;
+}
 
-@media only screen and (max-width: 600px) {
-    /* div {
-        margin-bottom: 30px;
-    } */
+#input {
+    margin-left: 18px;
+}
+
+#inputType {
+    width: 263px;
+    height: 55px;
+    margin-left: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-indent: 7%;
+    margin-right: 27px;
+}
+
+#resultType {
+    font-family: Montserrat;
+    font-weight: bold;
+    width: 263px;
+    height: 55px;
+    text-indent: 7%;
+}
+
+
+/* iPhones */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
     h1 {
-        font-size: 58%;
-        margin-left: 8%;
-        width: 91%;
+        font-size: 11px;
+        width: fit-content;
+        justify-content: center;
+        width: 22rem;
+        padding: 10px;
     }
     h2 {
-        font-size: 12px;
-        margin-left: -14%;
+        font-size: 1rem;
     }
-    h4{
-        font-size: 10px;
+    h4 {
+        font-size: 12px;
     }
     .head {
-        font-size: 11px;
-        margin-left: -21%;
+        font-size: 12px;
+        width: 9rem;
+        padding-top: 11px;
     }
     .headercontainer {
-        margin-left: -32px;
-        margin-right: 20px;
-        font-size: 20px;
-        width: 100%;
+        width: 127%;
+    }
+    .images {
+        width: 106%;
     }
     .scalebutton {
-        margin-left: -13px;
+        padding-top: 12px;
+        margin-left: 6%;
+        width: 11rem;
+        height: 7rem;
         margin-right: 10px;
-        top: 150x;
-        left: 250px;
-        width: 95px;
-        height: 96px;
     }
     .tempbutton {
-        top: 150x;
-        left: 250px;
-        width: 95px;
-        height: 96px;
-        margin-right: 8px;
+        width: 11rem; 
+        height: 7rem;
+        margin-right: 10px;
     }
     .volbutton {
-        top: 150x;
-        left: 250px;
-        width: 95px;
-        height: 96px;
+        width: 11rem;
+        height: 7rem;
+        padding-top: 10px;
+        margin-right: 24px;
     }
     .length-converter {
-        margin-left: -6%;
-        width: 383px;
+        margin-left: 3.1%;
     }
-    .from-to {
-        margin-left: 19px;
-        word-spacing: 115px;
+    .inputResult {
+        display: flex;
+        flex-flow: column;
+        margin-left: 5rem;
     }
-    #inputType {
-        width: 139px;
-        height: 40px;
-    }
-    #resultType {
-        width: 138px;
-        height: 40px;
+    .inputResult2 {
+        margin-left: 1.2rem;
     }
     input {
-        height: 40px;
-        font-size: 26px;
+        height: 3rem;
+        font-size: 2rem;
+        width: 7.8rem;
+        margin-right: 2rem;    
+    }
+    #inputType {
+        width: 8.3rem;
+        height: 3rem;
+    }
+    #resultType {
+        width: 8.3rem;
+        height: 3rem;
+    }
+}
+
+/* Galaxy Phones */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .length-converter {
+        margin-left: 4%;   
+    }
+    .head {
+        width: 9rem;
+    }
+    .volbutton {
+        margin-right: 10px;
+    }
+    input {
+        width: 8rem;
+    }
+    #inputType {
+        width: 8.5rem;
+    }
+    #resultType {
+        width: 8.5rem;
+    }
+}
+
+/* Nexus Phones */
+@media screen 
+  and (device-width: 384px) 
+  and (device-height: 592px) 
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    h2 {
+        font-size: 15px;
+        padding-top: 7px;
+        width: 6.5rem;
+    }
+    h1 {
+        width: 24rem;
+    }
+    .head {
+        font-size: 12px;
+        width: 12rem;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+    .scalebutton {
+        width: 10rem;
+        height: 9rem;
+        margin-bottom: 10px;
+        margin-left: 24%;
+    }
+    .tempbutton {
+        width: 10rem;
+        height: 9rem;
+        margin-bottom: 10px;
+        margin-left: 24%;
+    }
+    .volbutton {
+        width: 10rem;
+        height: 9rem;
+        margin-left: 24%;
+    }
+    .length-converter {
+        margin-left: 7%;
+    }
+    input {
+        width: 7rem;
+    }
+    #inputType {
+        width: 7.5rem;
+    }
+    #resultType {
+        width: 7.5rem;
+    }
+}
+
+/* Windows Phone */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px)  
+  and (orientation: portrait) {
+    div {
+        margin-bottom: 20px;
+    }
+    h1 {
+        width: 32rem;
+    }
+    h2 {
+        width: 24%;
+    }
+    .head {
+        width: 11.5rem;
+    }
+    .images {
+        width: 76%;
+    }
+    .scalebutton {
+        margin-left: 11%;
+    }
+    .volbutton {
+        margin-right: 30px;
+    }
+    .length-converter {
+        margin-left: 6%;
+    }
+    input {
+        width: 7.9rem;
+    }
+    #inputType {
+        width: 8.4rem;
+    }
+    #resultType {
+        width: 8.4rem;
+    }
+}
+
+@media screen 
+  and (min-device-width: 425px) 
+  and (max-device-width: 1024px) {
+    h1 {
+        font-size: 14px;
+        width: 27rem;
+    }
+    .head {
+        font-size: 15px;
+        width: 14rem;
+    }
+    .scalebutton {
+        margin-left: 11%;
+    }
+    .volbutton {
+        margin-right: 15%;
+    }
+    .length-converter {
+        margin-left: 14%;
+        padding-top: 11px;
+    }
+  }
+
+/* iPad */
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    div {
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.3rem;
+        width: 9rem;
+    }
+    h1 {
+        width: 38rem;
+        font-size: 27px;
+    }
+    .head {
+        font-size: 1.3rem;
+        width: 19.5rem;
+    }
+    .images {
+        width: 46rem;
+        padding-bottom: 25px;
+    }
+    .scalebutton {
+        margin-left: 4.5rem;
+    }
+    .length-converter {
+        margin-left: 4.5rem;
+        padding-top: 20px;
+    }
+    .from {
+        font-size: 21px;
+    }    
+    .to {
+        font-size: 21px;
+    }
+    input, #inputType, #resultType {
+        height: 4rem;
     }
 }

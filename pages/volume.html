@@ -37,22 +37,26 @@
             </button>
         </div>
         <div class="length-converter">
-            <div class="from-to">
-                <p>FROM TO</p>
+            <div class="inputResult">
+                <div class="inputResult1">
+                    <div class="from"><p>FROM</p></div>
+                    <input type="number" placeholder="Input" value="1" id="input" pattern="^[0-9]{1,}(\.[0-9]{0,2})?$">
+                    <select id="inputType">
+                        <option value="litre" selected>Litres</option>
+                        <option value="millilitre">Millilitres</option>
+                        <option value="gallon">Gallons</option>
+                    </select>
+                </div>
+                <div class="inputResult2">
+                    <div class="to"><p>TO</p></div>
+                    <input type="number" placeholder="Result" value="100" id="result" pattern="^[0-9]{1,}(\.[0-9]{0,2})?$">
+                    <select id="resultType">
+                        <option value="litre">Litres</option>
+                        <option value="millilitre" selected>Millilitres</option>
+                        <option value="gallon">Gallons</option>
+                    </select>
+                </div>
             </div>
-            <input type="text" placeholder="Input" value="1" id="input">
-            <input type="text" placeholder="Result" value="1000" id="result">
-            <select id="inputType">
-                <option value="litre" selected>Litres</option>
-                <option value="millilitre">Millilitres</option>
-                <option value="gallon">Gallons</option>
-            </select>
-            
-            <select id="resultType">
-                <option value="litre">Litres</option>
-                <option value="millilitre" selected>Millilitres</option>
-                <option value="gallon">Gallons</option>
-            </select>
         </div>
     </div>
     <script src="../js/volume.js"></script>
