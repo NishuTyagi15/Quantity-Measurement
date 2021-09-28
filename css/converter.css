@@ -239,9 +239,7 @@ input {
 /* iPhones */
 @media only screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  and (max-device-width: 480px) {
     h1 {
         font-size: 11px;
         width: fit-content;
@@ -314,9 +312,7 @@ input {
 /* Galaxy Phones */
 @media screen 
   and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
+  and (device-height: 640px) { 
     .length-converter {
         margin-left: 4%;   
     }
@@ -340,9 +336,7 @@ input {
 /* Nexus Phones */
 @media screen 
   and (device-width: 384px) 
-  and (device-height: 592px) 
-  and (-webkit-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+  and (device-height: 592px) {
     h2 {
         font-size: 15px;
         padding-top: 7px;
@@ -393,8 +387,7 @@ input {
 /* Windows Phone */
 @media screen 
   and (device-width: 480px) 
-  and (device-height: 800px)  
-  and (orientation: portrait) {
+  and (device-height: 800px) { 
     div {
         margin-bottom: 20px;
     }
@@ -456,9 +449,7 @@ input {
 /* iPad */
 @media screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-device-width: 1024px) {
     div {
         margin: 0;
     }
@@ -493,5 +484,13 @@ input {
     }
     input, #inputType, #resultType {
         height: 4rem;
+    }
+}
+
+@media screen 
+  and (device-width: 601px) 
+  and (device-height: 906px) {
+    h1 {
+        width: 20rem;
     }
 }
